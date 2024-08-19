@@ -1,0 +1,53 @@
+/* Responsividade (Responsive.css) */
+@media screen and (max-width: 768px) {
+    .login {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .login > h2 {
+        font-size: 30px;
+    }
+
+    .login .remember-forgot {
+        flex-direction: column;
+        align-items: center;
+        margin: -15px 0 15px 0;
+    }
+
+    .chat__form {
+        padding: 10px 5px;
+    }
+
+    .chat__input {
+        padding: 15px 15px 15px 45px;
+        font-size: 0.9rem;
+    }
+
+    .chat__button {
+        padding: 5px;
+    }
+
+    .chat__messages {
+        padding: 15px 10px 80px;
+    }
+
+    .emoji-button {
+        top: 24px;
+        left: 27px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .login > h2 {
+        font-size: 36px;
+    }
+
+    .chat__input {
+        font-size: 0.85rem;
+    }
+
+    .chat__button > span {
+        font-size: 1.5rem;
+    }
+}

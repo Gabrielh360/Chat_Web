@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+    <!-- Estilização CSS -->
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+
+
+    <!-- Importa Simbolos e Icones do Google Fonts-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+
+    <!-- Icone da Página -->
+    <link rel="icon" href="./src/images/icons8-balão-de-fala-96.png">
+
+    <!-- Titulo da Página -->
+    <title>Chat Web</title>
+</head>
+
+    <body>
+        <!-- Um container que envolve todo o Corpo da Aplicação -->
+        <section class="container login-background" id="container">
+
+            <!-- Tela de Login -->
+            <!-- Define a seção do login -->
+            <section class="login" id="login-section">
+
+                <!-- Titulo do Login -->
+                <h2>Login</h2>
+
+                <!-- Formulários do Login -->
+                <form class="login__form">
+
+                    <!-- Input_Box é um <div> que junta um Input e o Icone -->
+                    <div class="input__box">
+                        <!-- Input serve para o usuário inserir seu Nome de Usuário pra ter acesso ao Chat-->
+                        <input type="text" class="login__input" placeholder="Nome de Usuário" required />
+                        <!-- Incone para o Input -->
+                        <span class="material-symbols-outlined">person</span>
+                    </div>
+
+                    <!-- O remember-forgot Contém um Input do tipo checkbox que irá salvar o Nome de Usuário -->
+                    <label class="remember-forgot"><input type="checkbox" id="rememberMe"> Lembre-me</label>
+
+                    <!-- Um botão que irá permitir a entrada no chat se o Nome de Usuário for especificado -->
+                    <button type="submit" class="login__button">Entrar</button>
+
+                    <!-- O social_link são Links pras Redes Sociais minhas (O Criador)-->
+                    <div class="social_link">
+                        <!-- Um Mensagem junto de 2 Links, GitHub e Linkedin -->
+                        <p>Gostou ? Siga no <a href="https://github.com/Gabrielh360">GitHub</a> e <a
+                                href="https://www.linkedin.com/in/devgabrielh">Linkedin</a>.</p>
+                    </div>
+                </form>
+            </section>
+            <!------------------->
+
+
+            <!-- Tela do Chat -->
+            <!-- Define a área principal onde o chat acontece -->
+            <section class="chat" id="chat-section">
+                <!-- Contador de Usuários -->
+                <div class="user-count" id="user-count">👥 0</div>
+
+                <!-- Seção onde as mensagens do chat são exibidas -->
+                <section class="chat__messages">
+                    <!-- <div class="message--self">Hello, World!</div>
+                    
+                    <div class="message--other">
+                        <span class="message--sender">Manual do Dev</span>
+                        Olá, Mundo!
+                    </div> -->
+                </section>
+
+                <!-- Um formolário onde o Usuário digita as mensagens -->
+                <form class="chat__form">
+
+                    <!-- Um <div> dividindo todos os elementos dos Emojis -->
+                    <div class="Emojis">
+
+                        <!-- Botão pra acessar o seletor de emojis -->
+                        <button type="button" class="emoji-button">
+                            <span class="material-symbols-outlined">insert_emoticon</span>
+                        </button>
+
+                        <!-- O emoji-pioker é o seletor de Emojis onde o Usuário seleciona os Emojis -->
+                        <div class="emoji-picker">
+                            <!-- O emoji-tabs é <div> que dividi os Botões de Categória de cada Emoji-->
+                            <div class="emoji-tabs">
+                                <button class="emoji-tab active" data-category="recent"><span
+                                        class="material-symbols-outlined">schedule</span></button>
+                                <button class="emoji-tab" data-category="smileys"><span
+                                        class="material-symbols-outlined">sentiment_very_satisfied</span></button>
+                                <button class="emoji-tab" data-category="animais"><span
+                                        class="material-symbols-outlined">pets</span></button>
+                                <button class="emoji-tab" data-category="comidas"><span
+                                        class="material-symbols-outlined">ramen_dining</span></button>
+                                <button class="emoji-tab" data-category="atividades"><span
+                                        class="material-symbols-outlined">sports_martial_arts</span></button>
+                                <button class="emoji-tab" data-category="viagens"><span
+                                        class="material-symbols-outlined">travel</span></button>
+                                <button class="emoji-tab" data-category="objetos"><span
+                                        class="material-symbols-outlined">emoji_objects</span></button>
+                                <button class="emoji-tab" data-category="simbolos"><span
+                                        class="material-symbols-outlined">emoji_symbols</span></button>
+                                <button class="emoji-tab" data-category="bandeiras"><span
+                                        class="material-symbols-outlined">flag</span></button>
+                            </div>
+
+                            <!-- O emojo-content é uma <div> que dividi todos os emojis do resto dos Elementos -->
+                            <div class="emoji-content" id="emoji-content">
+                                <!-- Emojis serão adicionados aqui dinamicamente -->
+                            </div>
+
+                        </div>
+                        <!----------------------------------------------------------------------------->
+
+                    </div>
+                    <!------------------------------------------------------>
+
+                    <!-- O chat__input é onde o Usuário Digita as mensagens -->
+                    <input type="text" class="chat__input" placeholder="Digite uma mensagem" required />
+
+                    <!-- O chat__button é o Botão que envia as mensagens pro chat -->
+                    <button type="submit" class="chat__button">
+                        <span class="material-symbols-outlined">send</span>
+                    </button>
+
+                </form>
+                <!------------------------------------------------------>
+
+            </section>
+            <!------------------>
+
+        </section>
+        <!------------------>
+
+        <!-- O script.js é o Script Pricipal do Projeto, Armazena Grande Parte do Código do Chat Web-->
+        <script src="./src/js/script.js"></script>
+        <!-- O emojis.js é o Script relacionado ao Funcionamento dos Emojis -->
+        <script src="./src/js/emojis.js"></script>
+        <!-- O colors.js é o Scriipt que armazena uma Váriavel Global com Todos as Cores Utilizadas no Username do Usuário -->
+        <script src="./src/js/colors.js"></script>
+    </body>
+    
+</html>
