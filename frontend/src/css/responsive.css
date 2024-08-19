@@ -36,6 +36,15 @@
         top: 24px;
         left: 27px;
     }
+
+    .emoji-picker {
+        width: 350px;
+        max-height: 200px;
+    }
+
+    .emoji-tab {
+       padding: 10px 0.5px 5px 10px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -49,5 +58,14 @@
 
     .chat__button > span {
         font-size: 1.5rem;
+    }
+
+    .emoji-picker {
+        width: 350px;
+        max-height: 300px;
+    }
+
+    .emoji-tab {
+       padding: 10px 0.5px 5px 10px;
     }
 }
