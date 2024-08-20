@@ -1,5 +1,5 @@
 # 💬 Chat Web
-A meseses atrás eu tinha visto um video incrivel no youtube do Mundo Dev, ensinando a fazer um Chat Web, eu me interessei e decidi adicionar um diferencial, fiz o meu Chat Web inspirado no Whatsapp e de modestia parte acho que ficou incrivel, este projeto foi feito com HTML, CSS e JavaScript, também foi utilizado o Lado Frontend e Backend.
+A meses atrás eu tinha visto um video incrivel no youtube do Mundo Dev, ensinando a fazer um Chat Web, eu me interessei e decidi adicionar um diferencial, fiz o meu Chat Web inspirado no Whatsapp e de modestia parte acho que ficou incrivel, este projeto foi feito com HTML, CSS e JavaScript, também foi utilizado o Lado Frontend e Backend.
 
 ### 📲 | Conecte-se comigo
 [![Perfil DIO](https://img.shields.io/badge/-Meu%20Perfil%20na%20DIO-30A3DC?style=for-the-badge)](https://web.dio.me/users/Gabriel_Henrique)
